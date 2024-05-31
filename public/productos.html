@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/productos.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>Cerealitos</h1>
+            <img src="../img/GOJ7mGsWoAAVHtm.jpg" alt="Logo de Cerealitos" class="logo">
+        </div>
+        <form class="busqueda">
+            <input type="search" id="barra_busqueda" placeholder="Buscar barritas de cereal">
+            <button type="submit">Buscar</button>
+        </form>
+        <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="/public/quienesSomos.html">Quienes somos</a>
+            <a href="/public/inicioSesion.html">Inicio de sesión</a>
+            <a href="/public/registro.html">Registro</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="filters">
+            <h2>Filtros</h2>
+            <form id="filter-form">
+                <div class="filter-group">
+                    <h3>Tamaño</h3>
+                    <label><input type="checkbox" name="size" value="all"> Todos</label>
+                    <label><input type="checkbox" name="size" value="small"> Pequeños</label>
+                    <label><input type="checkbox" name="size" value="medium"> Medianos</label>
+                    <label><input type="checkbox" name="size" value="large"> Grandes</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Estado</h3>
+                    <label><input type="checkbox" name="state" value="new"> Nuevos</label>
+                    <label><input type="checkbox" name="state" value="discount"> Descuentos</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Precio límite</h3>
+                    <input type="range" id="price-range" name="price" min="10" max="120" value="500">
+                    <div id="price-display">$...</div>
+                </div>
+                <button type="submit" class="filter-button">Filtrar</button>
+            </form>
+        </aside>
+        <main id="product-list" class="product-list">
+            <div class="product-card">
+                <img src="" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p class="price">$50</p>
+                <p class="stock">En existencia</p>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p class="price">$60</p>
+                <p class="stock">En existencia</p>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p class="price">$70</p>
+                <p class="stock">En existencia</p>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Producto 4">
+                <h3>Producto 4</h3>
+                <p class="price">$80</p>
+                <p class="stock">En existencia</p>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Producto 5">
+                <h3>Producto 5</h3>
+                <p class="price">$50</p>
+                <p class="stock">En existencia</p>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Producto 6">
+                <h3>Producto 6</h3>
+                <p class="price">$60</p>
+                <p class="stock">En existencia</p>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Producto 7">
+                <h3>Producto 7</h3>
+                <p class="price">$70</p>
+                <p class="stock">En existencia</p>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Producto 8">
+                <h3>Producto 8</h3>
+                <p class="price">$80</p>
+                <p class="stock">En existencia</p>
+            </div>
+        </main>
+    </div>
+<!-- Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Product Image">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <p class="price" id="modalPrice"></p>
+        <p class="stock" id="modalStock"></p>
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1">
+        <button id="addToCartButton">Agregar al carrito</button>
+    </div>
+</div>
+<footer>
+    <center>
+    <div class="contenedor-abajo">
+        <div class="seccion-contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li><a href="http://">Facebook</a></li>
+                <li><a href="http://">Whatsapp</a></li>
+                <li><a href="http://">Teléfono</a></li>
+            </ul>
+        </div>
+        <div class="seccion-enlaces">
+            <h2>Quienes somos</h2>
+            <ul>
+                <li><a href="#quienes-somos">Quienes Somos</a></li>
+                <li><a href="#vision">Visión</a></li>
+                <li><a href="#mision">Misión</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
+            </ul>
+        </div>
+        <div class="seccion-metodos">
+            <h2>Métodos de pago</h2>
+            <ul>
+                <li><a href="http://">Tarjetas de crédito/débito</a></li>
+                <li><a href="http://">Pago en efectivo</a></li>
+                <li><a href="http://">Pago a meses</a></li>
+            </ul>
+        </div>
+    </div></center>
+</footer>
+    <script src="../Script/pasarelaproducto.js"></script>
+</body>
+</html>

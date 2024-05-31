@@ -1,0 +1,242 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF; /* Fondo principal */
+    color: #424242; /* Texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50; /* Verde Natural */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Formulario de búsqueda */
+.busqueda {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.busqueda input[type="search"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.busqueda button {
+    background-color: #FFC107; /* Amarillo Dorado */
+    color: #424242;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Tarjetas de producto */ /*<----modifique esta seccion de css*/
+.product-list {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* para centrar verticalmente */
+    gap: 10px;
+    box-sizing: border-box;
+    margin: auto; /* para centrar horizontalmente */
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+.product-card .price {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.product-card .stock {
+    color: #888;
+}
+/*WEAS DE MODAL/
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative; 
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1%;
+}
+
+.modal h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+
+.modal p {
+    margin: 2px 0;
+}
+
+.modal .price {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.modal .stock {
+    color: #888;
+    margin-bottom: 3px;
+}
+
+.modal label {
+    display: inline-block; /* estoa wea es para que este en la misma linea al input */
+    margin-bottom: 10px;
+}
+
+.modal input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 1rem;
+    display: inline-block; /* x d*/
+}
+
+.modal button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #8D6E63; /* Marrón Claro pueblo MARRON */
+    color: #FFFFFF;
+    padding: 10px;
+    text-align:justify;
+    display:flexbox;
+    justify-content: space-around; /* Alineación horizontal */
+    margin-top: auto;
+}
+
+.contenedor-abajo {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten si hay demasiados */
+}
+
+.seccion-contacto,
+.seccion-enlaces,
+.seccion-metodos {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin: 0 10px; /* Espacio entre secciones */
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
